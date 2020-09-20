@@ -246,7 +246,6 @@
     <Content Include="Content\images\wh3.jpg" />
     <Content Include="Content\images\wh4.jpg" />
     <Content Include="Content\images\wh5.jpg" />
-    <Content Include="Content\images\wh6.jpg" />
     <Content Include="Content\js\amcharts.js" />
     <Content Include="Content\js\bar.js" />
     <Content Include="Content\js\bootstrap.min.js" />
