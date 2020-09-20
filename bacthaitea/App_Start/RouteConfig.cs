@@ -11,13 +11,22 @@ namespace bacthaitea
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
+                routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+                routes.MapRoute(
+                name: "Order",
+                url: "order",
+                defaults: new { controller = "Order", action = "Index" }
+                );
+             routes.MapRoute(
+             name: "Report",
+             url: "report",
+             defaults: new { controller = "Report", action = "Index" }
+             );
             routes.MapRoute(
               name: "Product",
               url: "list-pruduct",
               defaults: new { controller = "Product", action = "Index" }
-          );
+            );
 
             routes.MapRoute(
                name: "Home",
