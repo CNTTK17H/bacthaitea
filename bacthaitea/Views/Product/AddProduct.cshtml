@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewBag.Title = "AddProduct";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="alert alert-success" role="alert" style="margin-top:50px;margin-bottom:50px">
+    <h4 class="my-2">THÊM SẢN PHẨM</h4>
+</div>
+
+<div class="card card_border border-primary-top p-4">
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="validationCustom01">Mã Sản Phẩm</label>
+                <input type="text" class="form-control"  placeholder="#SP001" id="validationCustom01" required>
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="validationCustom01">Tên Sản Phẩm</label>
+                <input type="text" class="form-control"  id="validationCustom01" required placeholder="Chè Long Vân">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="validationCustom01">Giá Sản Phẩm</label>
+                <input type="text" class="form-control"  id="validationCustom01" required placeholder="200000">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="validationCustom01">Giảm Giá (%)</label>
+                <select class="form-control" id="validationCustom01" required>
+                    <option>0</option>
+                    <option>5</option>
+                    <option>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="exampleFormControlSelect1">Loại chè</label>
+                <select class="form-control"  id="exampleFormControlSelect1">
+                    <option>Chè Đinh</option>
+                    <option>Chè Búp</option>
+                    <option>Chè Thượng Hạng</option>
+                    <option>Chè Đặc Sản</option>
+                    <option>Chè Truyền Thống</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="exampleFormControlSelect1">Trọng Lượng (kg)</label>
+                <select class="form-control"  id="exampleFormControlSelect1">
+                    <option>0,5</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="validationCustom01">Thêm ảnh</label>
+                <input type="file" class="form-control-file"  id="validationCustom01" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="validationCustom01">Mô tả sản phẩm</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Thêm</button>
+    </form>
+</div>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
