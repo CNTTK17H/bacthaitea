@@ -3,6 +3,62 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<div class="card card_border border-primary-top p-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Trạng Thái</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option>Đã giao</option>
+                        <option>Chưa Giao</option>
+                    </select>
+                </div>
+            </div>
 
-<h2>Index</h2>
+            <div class="col-sm">
+                <button type="button" class="btn btn-outline-primary">LỌC</button>
+            </div>
+            <div class="col-sm-3">
+                <div class="search-box">
+                    <form action="#search-results.html" method="get">
+                        <input class="search-input" placeholder="Search Here..." type="search" id="search">
+                        <button class="search-submit" value=""><span class="fa fa-search"></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+
+<div class="container" style="height:50px"></div>
+
+
+<div class="row row-cols-1 row-cols-md-5 g-3">
+    @for (int i = 0; i < 10; i++)
+    {
+        <div class="col" style="padding-bottom:20px">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Mã Đơn hàng</h5>
+                    <p class="card-text">
+                        Mã Khách Hàng
+                    </p>
+                    <p class="card-text">
+                        200.000 vnđ
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <small class="text-muted">Đặt hàng 3 phú trước</small>
+                </div>
+                <a href="order/orderID" class="btn btn-primary">Xem Chi Tiết</a>
+            </div>
+        </div>
+    }
+
+</div>

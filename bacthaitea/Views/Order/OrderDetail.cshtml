@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "OrderDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="alert alert-success" role="alert" style="margin-top:50px;margin-bottom:50px">
+    <h4 class="my-2">Mã Đơn Hàng</h4>
+</div>
+
+
+<div class="card card_border border-primary-top p-4">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Mã Khách hàng : KH001</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Họ Tên : pham</li>
+                    <li class="list-group-item">Địa chỉ : thái ngyên</li>
+                    <li class="list-group-item">SĐT : 02946912</li>
+                    <li class="list-group-item">email : kim@gmail.com</li>
+                </ul>
+            </div>
+            <div class="justify-content-lg-end">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-success">Đã giao</button>
+
+                </div>
+            </div>
+        </div>
+        <div  class="col-sm-8" >
+            <div class="table-responsive-lg">
+                <table class="table">
+
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Mã SP</th>
+                            <th scope="col">Tên SP</th>
+                            <th scope="col">Giá SP</th>
+                            <th scope="col">Trong lượng</th>
+                            <th scope="col">Đóng gói</th>
+                            <th scope="col">Hình ảnh</th>
+                            <th scope="col">Giá</th>
+                            <th scope="col">Giảm</th>
+                            <th scope="col">Số lượng</th>
+                            <th scope="col">Tổng Tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>M01</td>
+                            <td>Chè phúc thọ</td>
+                            <td> 2000 k</td>
+                            <td> 2 kg</td>
+                            <td> túi hút chân không </td>
+                            <td> null</td>
+                            <td> 121412</td>
+                            <td> 2% </td>
+                            <td> 2220 </td>
+                            <td> 2220 </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>M02</td>
+                            <td>Chè Long vân</td>
+                            <td> 2000 k</td>
+                            <td> 2 kg</td>
+                            <td> túi hút chân không </td>
+                            <td> null</td>
+                            <td> 2323</td>
+                            <td> 2% </td>
+                            <td> 610 </td>
+                            <td> 610 </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>M03</td>
+                            <td>Chè thúy ngọc</td>
+                            <td> 2000 k</td>
+                            <td> 2 kg</td>
+                            <td> túi hút chân không </td>
+                            <td> null</td>
+                            <td> 213</td>
+                            <td> 2% </td>
+                            <td> 309 </td>
+                            <td> 309 </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tổng Hóa Đơn</th>
+                            <td colspan="9"></td>
+                            <td>12354657</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

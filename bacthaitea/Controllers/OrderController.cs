@@ -13,5 +13,10 @@ namespace bacthaitea.Controllers
         {
             return View();
         }
+
+        public ActionResult OrderDetail()
+        {
+            return View();
+        }
     }
 }

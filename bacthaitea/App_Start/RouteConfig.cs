@@ -18,7 +18,11 @@ namespace bacthaitea
                 url: "order",
                 defaults: new { controller = "Order", action = "Index" }
              );
-
+            routes.MapRoute(
+                name: "OrderDetail",
+                url: "order/orderID",
+                defaults: new { controller = "Order", action = "OrderDetail" }
+             );
             routes.MapRoute(
                 name: "AddProduct",
                 url: "add-product",
@@ -28,6 +32,11 @@ namespace bacthaitea
                 name: "Product",
                 url: "list-pruduct",
                 defaults: new { controller = "Product", action = "Index" }
+            );
+            routes.MapRoute(
+                name: "ProductDetail",
+                url: "list-pruduct/masp",
+                defaults: new { controller = "Product", action = "ProductDetail" }
             );
 
             routes.MapRoute(

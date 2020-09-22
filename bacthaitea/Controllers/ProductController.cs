@@ -17,5 +17,9 @@ namespace bacthaitea.Controllers
         {
             return View();
         }
+        public ActionResult ProductDetail()
+        {
+            return View();
+        }
     }
 }
