@@ -6,15 +6,10 @@ using System.Web.Mvc;
 
 namespace bacthaitea.Controllers
 {
-    public class OrderController : Controller
+    public class HomeUserController : Controller
     {
-        // GET: Order
+        // GET: HomeUser
         public ActionResult Index()
-        {
-            return View();
-        }
-
-        public ActionResult OrderDetail()
         {
             return View();
         }

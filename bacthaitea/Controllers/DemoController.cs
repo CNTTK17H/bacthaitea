@@ -6,8 +6,9 @@ using System.Web.Mvc;
 
 namespace bacthaitea.Controllers
 {
-    public class HomeController : Controller
+    public class DemoController : Controller
     {
+        // GET: Demo
         public ActionResult Index()
         {
             return View();

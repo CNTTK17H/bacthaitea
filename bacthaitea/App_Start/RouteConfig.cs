@@ -11,44 +11,31 @@ namespace bacthaitea
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
-             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-             routes.MapRoute(
-                name: "Order",
-                url: "order",
-                defaults: new { controller = "Order", action = "Index" }
-             );
-            routes.MapRoute(
-                name: "OrderDetail",
-                url: "order/orderID",
-                defaults: new { controller = "Order", action = "OrderDetail" }
-             );
-            routes.MapRoute(
-                name: "AddProduct",
-                url: "add-product",
-                defaults: new { controller = "Product", action = "AddProduct" }
-             );
-            routes.MapRoute(
-                name: "Product",
-                url: "list-pruduct",
-                defaults: new { controller = "Product", action = "Index" }
-            );
-            routes.MapRoute(
-                name: "ProductDetail",
-                url: "list-pruduct/masp",
-                defaults: new { controller = "Product", action = "ProductDetail" }
-            );
 
             routes.MapRoute(
-                name: "Home",
-                url: "home",
-                defaults: new { controller = "Home", action = "Index"}
-            );
+            name: "demo",
+            url: "demo",
+            defaults: new
+            {
+              controller = "Demo",
+              action = "Index",
+              id = UrlParameter.Optional
+            }
+          );
 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            name: "Default",
+            url: "{controller}/{action}/{id}",
+            defaults: new
+            {
+             controller = "HomeUser",
+             action = "Index",
+             id = UrlParameter.Optional
+            },
+             namespaces: new[] {
+                    "MvcArea.Controllers"
+                }
             );
         }
     }

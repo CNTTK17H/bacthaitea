@@ -4,20 +4,16 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace bacthaitea.Controllers
+namespace bacthaitea.Areas.Admin.Controllers
 {
-    public class ProductController : Controller
+    public class OrderController : Controller
     {
-        // GET: Product
+        // GET: Admin/Order
         public ActionResult Index()
         {
             return View();
         }
-        public ActionResult AddProduct()
-        {
-            return View();
-        }
-        public ActionResult ProductDetail()
+        public ActionResult OrderDetail()
         {
             return View();
         }

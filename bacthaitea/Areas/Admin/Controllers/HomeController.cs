@@ -4,11 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace bacthaitea.Controllers
+namespace bacthaitea.Areas.Admin.Controllers
 {
-    public class ReportController : Controller
+    public class HomeController : Controller
     {
-        // GET: Report
+        // GET: Admin/Home
         public ActionResult Index()
         {
             return View();
